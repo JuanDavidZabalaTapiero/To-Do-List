@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Exo 2";
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0;
+
+    .div_contenedor_tareas {
+        padding: 20px;
+        max-height: 95%;
+        background: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .div_cont_add {
+            margin-bottom: 15px;
+
+            #input_tarea {
+                padding: 5px;
+                border-radius: 5px;
+                border: 1px solid lightgray;
+            }
+
+            #btn_add_task {
+                padding: 6px 10px;
+                background: rgb(0, 175, 0);
+                border: none;
+                color: white;
+                border-radius: 7px;
+                cursor: pointer;
+            }
+
+            #btn_add_task:hover {
+                background: green;
+            }
+        }
+
+        .select_order {
+            display: none;
+        }
+
+        .show_select {
+            display: block;
+            margin-bottom: 15px;
+            padding: 5px;
+            border-radius: 7px;
+            border: 1px solid lightgray;
+            appearance: none;
+        }
+
+        .show_select:focus {
+            border-radius: 7px 7px 0 0;
+            outline: none;
+        }
+
+        #div_tareas {
+            overflow-y: auto;
+
+            .div_tarea {
+                padding: 7px;
+                border-bottom: 2px solid lightgray;
+
+                .main_tarea {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .completed_task {
+                        text-decoration: line-through;
+                        color: #b4b4b4;
+                    }
+                }
+
+                input {
+                    border: none;
+                }
+
+                input:focus {
+                    outline: none;
+                }
+
+                i {
+                    padding: 5px 10px;
+                    background: rgb(255, 35, 35);
+                    color: white;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+
+                i:hover {
+                    background: rgb(199, 0, 0);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+}
+body .div_contenedor_tareas {
+  padding: 20px;
+  max-height: 95%;
+  background: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+body .div_contenedor_tareas h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+body .div_contenedor_tareas .div_cont_add {
+  margin-bottom: 15px;
+}
+body .div_contenedor_tareas .div_cont_add #input_tarea {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+body .div_contenedor_tareas .div_cont_add #btn_add_task {
+  padding: 6px 10px;
+  background: rgb(0, 175, 0);
+  border: none;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+}
+body .div_contenedor_tareas .div_cont_add #btn_add_task:hover {
+  background: green;
+}
+body .div_contenedor_tareas .select_order {
+  display: none;
+}
+body .div_contenedor_tareas .show_select {
+  display: block;
+  margin-bottom: 15px;
+  padding: 5px;
+  border-radius: 7px;
+  border: 1px solid lightgray;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+body .div_contenedor_tareas .show_select:focus {
+  border-radius: 7px 7px 0 0;
+  outline: none;
+}
+body .div_contenedor_tareas #div_tareas {
+  overflow-y: auto;
+}
+body .div_contenedor_tareas #div_tareas .div_tarea {
+  padding: 7px;
+  border-bottom: 2px solid lightgray;
+}
+body .div_contenedor_tareas #div_tareas .div_tarea .main_tarea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .div_contenedor_tareas #div_tareas .div_tarea .main_tarea .completed_task {
+  text-decoration: line-through;
+  color: #b4b4b4;
+}
+body .div_contenedor_tareas #div_tareas .div_tarea input {
+  border: none;
+}
+body .div_contenedor_tareas #div_tareas .div_tarea input:focus {
+  outline: none;
+}
+body .div_contenedor_tareas #div_tareas .div_tarea i {
+  padding: 5px 10px;
+  background: rgb(255, 35, 35);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+body .div_contenedor_tareas #div_tareas .div_tarea i:hover {
+  background: rgb(199, 0, 0);
+}/*# sourceMappingURL=style.css.map */
