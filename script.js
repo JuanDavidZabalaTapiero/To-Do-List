@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // SUBRAYAR UNA TAREA
-        div_1.addEventListener('click', function () {
+        span.addEventListener('click', function () {
             span_tarea.classList.toggle("completed_task");
         });
     }
