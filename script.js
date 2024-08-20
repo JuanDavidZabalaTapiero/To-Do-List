@@ -74,6 +74,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         console.log(array_tareas);
 
+        input_tarea.value = "";
+
         showSelectOrder();
 
         // ELIMINAR LA TAREA
